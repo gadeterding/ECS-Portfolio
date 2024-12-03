@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gwynevere Deterding's ECS Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      background-color: #8e8888;
+    }
+    nav button {
+      background-color: #8e8888;
+      color: white;
+      padding: 14px 20px;
+      border: none;
+      cursor: pointer;
+      flex-grow: 1;
+      text-align: center;
+    }
+    nav button:hover {
+      background-color: #8e8888;
+    }
+    nav button.active {
+      background-color: #f1b5c4;
+    }
+    .content {
+      padding: 20px;
+      background-color: #f1f1f1;
+      min-height: 80vh;
+    }
+    .tab-content, .sub-tab-content {
+      display: none;
+    }
+    .tab-content.active, .sub-tab-content.active {
+      display: block;
+    }
+    .subtabs {
+      margin-top: 10px;
+      display: flex;
+      background-color: #8e8888;
+    }
+    .subtabs button {
+      flex-grow: 1;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      background-color: #8e8888;
+      color: white;
+    }
+    .subtabs button:hover {
+      background-color: #8e8888;
+    }
+    .subtabs button.active {
+      background-color: #f1b5c4;
+    }
+    h1 {
+      text-align: center;
+    }
+    h3 {
+      text-align: center;
+    }
+    h4 {
+      text-align: center;
+    }
+    .hangingindent {
+      padding-left: 22px ;
+      text-indent: -22px ;
+    }
+    video {
+      display: block;
+      margin: auto;
+    }
+    /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Gwynevere Deterding's Emerging Choreographers' Portfolio</h1>
+  </header>
+
+  <!-- Main Navigation Tabs -->
+  <nav>
+    <button class="tab-link" onclick="openTab(event, 'Homepage')" id="defaultTab">Home</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab1')">Movement Studies</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab2')">Artistic Inspirations</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab3')">Choreographic Treatment</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab4')">Costume Treatment</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab5')">Audition Reflection</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab6')">Rehearsal Documentation</button>
+    <button class="tab-link" onclick="openTab(event, 'Tab7')">Overall Reflection</button>
+  </nav>
+
+  <!-- Main Content Section -->
+  <div class="content">
+    <div id="Homepage" class="tab-content active">
+  <div class="row">
+    <div class="column">
+      <img src="image 1.png" alt="Snow" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="image 2.png" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+      <img src="image 3.png" alt="Mountains" style="width:100%">
+    </div>
+  </div>
+    </div>
+  
+
+    <!-- Tab 1 with Subtabs -->
+    <div id="Tab1" class="tab-content">
+      <h2>Movement Studies</h2>
+      <div class="subtabs">
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab1-1')">Movement Study 1</button>
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab1-2')">Movement Study 2</button>
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab1-3')">Movement Study 3</button>
+      </div>
+      <div id="SubTab1-1" class="sub-tab-content active">
+        <h3>Movement Study 1</h3>
+        <p><video width="960" height="720" controls>
+          <source src="Movement Study 1- Gwynevere Deterding.mp4" type="video/mp4">
+          <source src="Movement Study 1- Gwynevere Deterding.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+        </video></p>
+      </div>
+      <div id="SubTab1-2" class="sub-tab-content">
+        <h3>Movement Study 2</h3>
+        <video controls="controls" width="960" height="720" name="Video Name">
+          <source src="Movement 1 Beginning.mov">
+        </video>
+        <video controls="controls" width="960" height="720" name="Video Name">
+          <source src="Movement 2 Beginning.mov">
+        </video>
+        <p style="text-indent: 40px">My piece “At a Crossroads” is about transitional stages in life where you must decide what path to take next. Inspired by The Bell Jar by Sylvia Plath, the piece explores the paralyzing indecision and anxiety that can surround planning your future path, and the fear of making the wrong choice. The work follows an individual in a dreamlike state who is surrounded by manifestations of her potential futures, and she is pulled in different directions as she tries to make a decision.</p>
+        <p style="text-indent: 40px">The music for this work is Gardermoen and Tempelhof by Julia Kent. I chose Gardermoen as the piece to open the work because the plucked cello notes feel mysterious and suspenseful, which goes along with the concept of feeling unsure about the future. I also felt like the long, drawn-out cello notes would work well with the expansive, pulling movement quality that I want for the first movement. I chose Tempelhof for the second movement because I wanted a sense of urgency as the lead dancer becomes more and more anxious about which path she is going to choose, which is provided by the fast, driving tempo of the low notes. The screeching runs that come in over the top provide a haunting, eerie quality that helps to reflect the emotions of anxiety and fear that the lead dancer is experiencing. </p>
+        <p style="text-indent: 40px">For the staging of the piece, I have focused on creating structures with the dancers that represent images from the novel/that relate to the concept such as the fig tree, the bell jar, and a path. My movement creation has been focused on long lines, outstretched arms, and elongated movements to depict the feeling of being pulled in different directions, and open palms to reflect the feeling of tension and unease. I have also incorporated partner work to create a more tangible sense of actually being pulled by a force. The first movement opens with Kylie sitting under the fig tree, and then becoming trapped by all of her future choices. A path then opens up for her and she follows it to get to Liz, who represents the first path that she is going to explore. In the opening of the second movement, Kylie has decided what path she is going to choose but Hillary and Maia are stopping her, symbolizing the future paths that she has given up on. </p>
+      </div>
+      <div id="SubTab1-3" class="sub-tab-content">
+        <h3>Movement Study 3</h3>
+        <video controls="controls" width="960" height="720" name="Video Name">
+            <source src="Movement Study 3.mov">
+          </video>
+        </video>
+      </div>
+    </div>
+
+    <!-- Tab 2 with Subtabs -->
+    <div id="Tab2" class="tab-content">
+      <h2>Artistic Inspirations</h2>
+      <div class="subtabs">
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab2-1')">Mark Morris</button>
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab2-2')">Jiří Kylián</button>
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab2-3')">Crystal Pite</button>
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab2-4')">Rena Butler</button>
+        <button class="sub-tab-link" onclick="openSubTab(event, 'SubTab2-5')">Pina Bausch</button>
+      </div>
+      <div id="SubTab2-1" class="sub-tab-content active">
+        <h3>Mark Morris</h3>
+        <p style="text-indent: 40px">Mark Morris was born in 1956 and began his dance training in Seattle, Washington, studying under Verla Flowers and Perry Brunson in multiple styles including folk, classical ballet, and modern. In his early career, he performed with the Lar Lubovitch Dance Company, Koleda Balkan Dance Ensemble, Hannah Kahn Dance Company, Laura Dean Dancers and Musicians, and the Eliot Feld Ballet. In 1980, he founded the Mark Morris Dance Group and has created over 150 works for the company, as well as 22 works commissioned by ballet companies worldwide.</p>
+        <p style="text-indent: 40px">In an interview, Mark Morris states, “Every dance I make up, I make up because of the music I’m working with” (Notes for a Dancer). This makes it so that his dances are very much in conversation with the music, such as the dancers diving to the floor on a descending line in the music. His works all have a very different look due to the wide variety of music he choreographs to. According to company director Sam Black, the first thing people notice about Mark Morris’s work is that it “looks easy” and “like anyone could do it” and that the company has a diversity of body types (Mark Morris Dance Group). Mark Morris says that he wants “people to look like people when they are dancing,” so his choreography features people dancing together in social dances such as line dances and circle dances (Mark Morris choreographer).</p>
+        <p style="text-indent: 40px">From observing Mark Morris’s work, I learned just how effective repetition can be, especially when slight variations are added in or the tempo changes. In the excerpt from “Spring, Spring, Spring”, the dancers repeat the movement in the three lines over and over, and then they break away and return to the three lines. The shapes and filling of the empty spaces is so visually appealing and powerful that it doesn’t grow stale and gains new life when it is repeated at a faster pace when the music changes. I was also very inspired by the way he shapes the stage, and the unique patterns and formations he creates with his dancers. This was particularly evident in “L’Allegro, Il Penseroso, Ed Il Moderato,” where the dancers are simply walking around the stage, but the patterns make it exciting to watch. I also learned the effectiveness of simplistic and pedestrian movement. From watching videos of him in rehearsal, I witnessed how closely his artistic process is related to the music, and how he placed heavy importance on his dancers hitting the exact right notes.</p>
+        <h4>Bibliography</h4>
+        <p class="hangingindent">“Mark Morris: A Biography.” PBS, Public Broadcasting Service, 23 Mar. 2001, https://www.pbs.org/newshour/arts/entertainment-jan-june01-mark-morris_03-23.</p>
+        <p class="hangingindent">“Mark Morris.” Mark Morris Dance Group, 25 Apr. 2024, https://markmorrisdancegroup.org/the-dance-group/mark-morris/?_gl=1*gk3ceh*_gcl_au*Mjc3OTE4NjY2LjE3MjU5Mzc4MDQ.*_ga*MTM3NjExMDIwMi4xNzI1OTM3ODA0*_ga_Q6MBZ26SXQ*MTcyNTkzNzgwMy4xLjAuMTcyNTkzNzgwNi4wLjAuMA..</p>
+        <p class="hangingindent">“Mark Morris choreographer.” YouTube, uploaded by George Pollen, 30 May 2018, https://www.youtube.com/watch?v=fVtnCFpVlBY.</p>
+        <p class="hangingindent">“Mark Morris Dance Group.” YouTube, uploaded by StateoftheArtsNJ, 21 Feb 2024, https://www.youtube.com/watch?v=jbcS-X0RDk4.</p>
+        <p class="hangingindent">“Notes for a Dancer.” YouTube, uploaded by LFLCVideos, 14 Aug 2007, www.youtube.com/watch?v=S25Ud7ZWu7I.</p>
+      </div>
+      <div id="SubTab2-2" class="sub-tab-content">
+        <h3>Jiří Kylián</h3>
+        <p style="text-indent: 40px">Jiří Kylián was born in Czechoslovakia in 1947 and trained at the School of National Ballet in Prague and at the Prague Conservatory. In 1967, he received a scholarship to study at The Royal Ballet School, and then left to join the Stuttgart Ballett under John Cranko, where he created his first work “Paradox.” He was inspired by the work of resident choreographer Glen Tetley, and he was encouraged to choreograph by Cranko. Kylian became the artistic director of Nederlands Dans Theater in 1975 and has created nearly 100 works.</p>
+        <p style="text-indent: 40px">In an interview with Dance Magazine, Kylián states, “What I really like are the very simplest things that you can think of, and I like to put them together in a way that they create something different, something maybe complicated, or something that creates another dimension, and when you see my choreography, you see that it is built that way. Though it sometimes seems complicated, you can see it is the simplest things put together. It is the relationship of the things that is important, rather than the things themselves—the movements, steps, lifts” (Escoyne). An example of this is in the first four minutes of the clip from “Wings of Wax”, where the female dancers are spread out across the stage slow motion walking in place while the male dancers do fast and large movements around them. The simplicity and slowness of the walking adds dimension and contrast to the fast and complicated movements that the men are doing. It is clear that the relationships between dancers is very important to Kylián’s work, as each of the three works that I viewed has a pas de deux section. While many of the movements and lifts in these pas sections are very complex and impressive, some of the simplest moments are the most impactful, such as at 4:00 in “Bella Figura” where the woman hangs limp in the man’s arms while he stares intensely towards stage left, and how he holds the back of her leotard while she crawls in that direction. The moment of stillness and the focus draws me in and makes me think about the intention of the moment. Kylián’s choreographic process is collaborative, and he told the New York Times, “I very much like the dancers to participate in the creation. It not only enriches the vocabulary and the spiritual layers of the work, but it also gives the dancers more possibility to use their own creativity” (Boston Ballet). I believe that this collaborative process is what made his dancers so connected to each other and to the intention behind the works.</p>
+        <p style="text-indent: 40px">From observing Kylián’s work, I have learned how I can take a simple concept or movement and develop it into something that is dimensional and complex. I have learned how partnering and lifts can help to develop a theme or storyline. I have also gained a greater understanding of how collaborating with your dancers can benefit the choreographic process.</p>
+        <h4>Bibliography</h4>
+        <p class="hangingindent">“Bella Figura. Jiri Kylian. Netherlands Dance Theater.” YouTube, uploaded by Jorge Nozal, 3 Apr. 2019, https://www.youtube.com/watch?v=JK1Fun5U_qs.</p>
+        <p class="hangingindent">“Biography.” Jiří Kylián - Existence, www.jirikylian.com/existence/.</p>
+        <p class="hangingindent">Escoyne, Courtney. “Jiří Kylián on Turning the ‘Simplest Things’ into Dances.” Dance Magazine, 4 Mar. 2022, www.dancemagazine.com/jiri-kylian-2/#gsc.tab=0.</p>
+        <p class="hangingindent">“’Petite Mort’ Pas de Deux (Jiri Kylian).” YouTube, uploaded by 888titania, 25 Mar. 2018, https://www.youtube.com/watch?v=-XKjgCugrT0&t=123s.</p>
+        <p class="hangingindent">“Who Is Jiří Kylián?” Boston Ballet, 20 July 2023, www.bostonballet.org/stories/jiri-kylian/#:~:text=Ji%C5%99%C3%AD%20Kyli%C3%A1n.%20Photo%20credit:%20Anton%20Corbijn.%20Get%20to%20know%20Ji%C5%99%C3%AD.</p>
+        <p class="hangingindent">“Wings of Wax: Clip from the Ballet by Jiří Kylián | Nederlands Dans Theater.” YouTube, uploaded by MONARDA, 5 May 2023, https://www.youtube.com/watch?v=WKF27O4m-iI.</p>
+      </div>
+      <div id="SubTab2-3" class="sub-tab-content">
+        <h3>Crystal Pite</h3>
+        <p style="text-indent: 40px">Crystal Pite began her dance career as a company member with Ballet British Columbia and William Forsythe’s Ballett Frankfurt. Forsythe was a key influence on her choreographic work. Her choreographic debut was with Ballet BC in 1990, and since then she has created more than sixty works for companies including The Royal Ballet, Nederlands Dans Theater, The Paris Opera Ballet, and the National Ballet of Canada, addressing themes including “trauma, addiction, conflict, consciousness, and mortality” (kiddpivot.org). In 2002, she formed her own company called Kidd Pivot.</p>
+        <p style="text-indent: 40px">Crystal Pite’s creative process is informed by narrative, and her works often have an articulate storyline. In an interview with the National Film Board of Canada, she describes how movement can reflect an emotional state, an example being “the spikiness of your fingers is an outward expression of an internal suffering” (Crystal Pite: Wordless Language). In her work “The Statement,” the soundscape features a script being read aloud, and the dancers are essentially miming the words that are being read to create the narrative with their movement. It is impressive how she is able to use abstract and unique movements that still clearly convey the intent of the story. A clear example of this is the section from 9:05 to 9:20 where the woman’s voice is interrogating one of the men about a statement he has made, which he now wishes to take back. As they argue, the dancers perform movement that pushes each other back and forth, and then the woman crawls into a plank over the man when his corresponding voice says, “don’t pin this on me.” The movement complements what is happening in the narrative while still being dance and abstract and not just literal gestures. In an interview with Jacob’s Pillow, Crystal Pite describes one of the key concepts that informs her work as “contrasting elements held in a kind of tension” (PillowTalk with Crystal Pite and Philip Szporer, 2011). An example of these contrasting elements can be seen in the “Spring” section of her work “The Seasons’ Canon.” In the section from 0:55 to 1:14, the dancers are moving very expansively and legato, which stands in stark contrast to the next section at 1:15 where the dancers match the staccato violin notes with their quick and repetitive arm movements, head movements, and rocking back and forth.</p>
+        <p style="text-indent: 40px">From observing Crystal Pite’s work, I have learned how a narrative can be articulated through dance, and how contrasting elements such as rhythm or quality of movement can bring an exciting sense of tension and juxtaposition to a work. In my future choreography, I want to experiment with movement inventions that can outwardly express inner emotions, such as what Pite was discussing with the “spiky fingers,” and explore how I can communicate a narrative through movement.</p>
+        <h4>Bibliography</h4>
+        <p class="hangingindent">“Crystal Pite.” Kidd Pivot, kiddpivot.org/crystal-pite/.</p>
+        <p class="hangingindent">“Crystal Pite "The Seasons' Canon" Spring.” Youtube, uploaded by Sebastian Deka, 29 Sep. 2023, https://www.youtube.com/watch?v=ZC06cVFasT8</p>
+        <p class="hangingindent">“Crystal Pite: Wordless Language.” Youtube, uploaded by NFB, 28 May 2022, https://www.youtube.com/watch?v=i_vdiAH3uWs</p>
+        <p class="hangingindent">Keefe, Maura. “Crystal Pite.” Jacob’s Pillow Dance Interactive, March 2017, danceinteractive.jacobspillow.org/themes-essays/women-in-dance/crystal-pite/.</p>
+        <p class="hangingindent">“Solo Echo - Crystal Pite (Virtual Archive, Ballet BC, 2015).” Youtube, uploaded by Ballet BC, 22 Apr. 2020, https://www.youtube.com/watch?v=IId60ukhApw</p>
+        <p class="hangingindent">“The Statement ( Crystal Pite ).” Youtube, uploaded by Movement Ballet, 5 Oct. 2023, https://www.youtube.com/watch?v=pVwRPmNiZmM</p>
+      </div>
+      <div id="SubTab2-4" class="sub-tab-content">
+        <h3>Rena Butler</h3>
+        <p style="text-indent: 40px">Rena Butler is from Chicago, IL and began her dance studies at The Chicago Academy for the Arts, and also studied abroad at Taipei National University of the Arts in Taiwan. She received her BFA from SUNY Purchase Conservatory of Dance. She has danced with many companies including Hubbard Street Dance Chicago, AIM by Kyle Abraham, and Gibney Company. She has created works for a vast array of companies such as National Ballet of Canada, Hubbard Street Dance Chicago, and Parsons Dance to name a few, and is the recipient of the 2019 Princess Grace Foundation Award for Choreography (renabutler.com).</p>
+        <p style="text-indent: 40px">One technique that Rena Butler implements is the use of lighting to shape the space and contribute to the storytelling of the piece. In the opening of “This, That, and the Third,” the dancers each have their own rectangle of light that they are confined within. She uses this as symbolism to represent the barriers that are imposed by outside forces, which helps her to communicate the message of her work which is about the idea of code-switching (renabutler.com). In addition, having to keep the dancers within the light provides a limitation that leads to some creative movement that tests the boundaries of the light without traveling away from it. In an interview with GroundWorks DanceTheater, she discusses how her work “lends itself to a lot of athleticism” but how she is also interested in making “imagery that feels human” (In Process With Rena Butler). In her piece “Aguas Que Van, Quieren Volver,” much of the movement is very athletic and abstract, but there are also moments that feel more familiar and human, such as at 1:19 when two of the dancers are salsa dancing together, and at 1:02 when two of the dancers are tenderly reaching out to the third dancer who appears to be suffering. This combination of athleticism and the pedestrian makes it both exciting to watch but also relatable and able to be emotionally connected to.</p>
+        <p style="text-indent: 40px">I am very inspired by Rena Butler’s movement invention, as it is very unique from anything I have seen before. After observing her work, I would like to explore how I can combine pedestrian movements with athletic and abstract movements. As someone who likes to choreograph with very athletic movements I think experimenting with more “human” movement will be useful for storytelling and conveying emotions to the audience. I would also like to experiment more with lighting and ways it can be used to physically shape the space.</p>
+        <h4>Bibliography</h4>
+        <p class="hangingindent">“About.” Rena Butler, www.renabutler.com/. Accessed 30 Oct. 2024.</p>
+        <p class="hangingindent">“Aguas Que Van, Quieren Volver | Hubbard Street Dance Chicago.” Vimeo, uploaded by Rena Butler, 15 Aug. 2024, https://vimeo.com/999357867/1b8c529497</p>
+        <p class="hangingindent">“Bloom Cincinnati Ballet.” Vimeo, uploaded by Rena Butler, 30 Apr. 2024, https://vimeo.com/941447881/f13871bc0f</p>
+        <p class="hangingindent">“IN PERFORMANCE: Hubbard Street Dance Chicago in Rena Butler's THIS, THAT, AND THE THIRD.” Youtube, uploaded by hubbardstreetdance, 19 Dec. 2019, https://www.youtube.com/watch?v=9j9LL0Fv_Xg</p>
+        <p class="hangingindent">“In Process with Rena Butler.” Youtube, uploaded by GroundWorks DanceTheater, 28 June 2022, https://www.youtube.com/watch?v=MOuoxhSCVT0</p>
+      </div>
+      <div id="SubTab2-5" class="sub-tab-content">
+        <h3>Pina Bausch</h3>
+        <p style="text-indent: 40px">Pina Bausch was born in 1940 in Solingen, Germany. She trained at the Folkwang School in Essen under Kurt Jooss, who “sought to reconcile the free spirit of the dance revolutionaries with the fundamental rules of ballet.” In 1973, she was appointed head of the Wuppertal Ballet, which she renamed Tanztheater Wuppertal. Bausch’s dance theatre “risks taking an unflinching look at reality, yet at the same time invites us to dream.” Her company was controversial at the beginning but gradually achieved international recognition (pinabaush.org).</p>
+        <p style="text-indent: 40px">Relationships between the dancers play a big role in Pina Bausch’s work. She creates emotions by asking the dancers questions about their experiences, and from the answers she develops gestures, sentences, dialogs, and little scenes. (Wikipedia) In the excerpt from “Café Muller”, a man manipulates a couple into a new position, and when he leaves, they revert back to their original position. This repeats over and over, growing faster and more intense, until the couple begins performing the manipulations on their own without the man present. This manipulation creates a sense of being controlled or affected by a force, which is something I would like to explore in my own ECS piece with the soloist being influenced by the different choices available to her. The audible breathing and grunting are another way she communicates emotion in this excerpt, specifically franticness and exhaustion. Bausch also uses repetition and moments of stillness in her work. In the except from “The Rite of Spring” (Tanztheater Wuppertal Pina Bausch), around the 1:00 mark, the group of women in the corner of the stage are repeating the same phrase over and over again. This creates a sense of ritualism and provides a stark contract to the man standing still in the center of the stage, drawing the audience’s eye towards him. Bausch’s process also involves unique stage designs, such as the ground being covered in dirt in The Rite of Spring and water on the stage and a giant rock in “Vollmond”. This helps the audience be transported to the setting that the dance is taking place in.</p>
+        <p style="text-indent: 40px">Through observing Pina Bausch’s work, I have learned about new ways to convey emotion and narrative through movement. In my own choreographic process, I want to incorporate having conversations with my dancers about what emotions they have related to my concept and help them to connect to the character that I want them to portray.</p>
+        <h4>Bibliography</h4>
+        <p class="hangingindent">“Pina Bausch.” Wikipedia, Wikimedia Foundation, 9 Nov. 2024, en.wikipedia.org/wiki/Pina_Bausch. Accessed 13 Nov. 2024.</p>
+        <p class="hangingindent">“Pina Bausch - Cafe Müller.” Youtube, uploaded by TOFROUTO, 25 Oct. 2012, https://www.youtube.com/watch?v=3WLazG0bQPI&t=20s</p>
+        <p class="hangingindent">“Pina -- Vollmond (Full Moon) -- Tanztheater Wuppertal.” Youtube, uploaded by cosmatec, 26 Dec. 2012, https://www.youtube.com/watch?v=LnUesmL-1CQ</p>
+        <p class="hangingindent">“Talking about People through Dance – Pina Bausch Biography.” Pina Bausch, Pina Bausch Foundation, 8 Nov. 2021, www.pinabausch.org/en/post/biography. Accessed 13 Nov. 2024.</p>
+        <p class="hangingindent">“Tanztheater Wuppertal Pina Bausch.” Youtube, uploaded by rbro3001, 12 Dec. 2016, https://www.youtube.com/watch?v=J3i7r79dtFo&t=61s</p>
+      </div>
+    </div>
+
+    <div id="Tab3" class="tab-content">
+      <h2>Choreography Treatment</h2>
+      <p><b>Choreographer Name:</b> Gwynevere Deterding </p>
+      <p><b>Production Title:</b> Emerging Choreographers’ Showcase 2025 </p>
+      <p><b>Proposed title of the choreography:</b> At a Crossroads </p>
+      <p><b>Music selection(s):</b> Gardermoen by Julia Kent and Tempelhof by Julia Kent </p>
+      <p><b>Style of movement:</b> Contemporary </p>
+      <p><b>Cast Size/Demographic:</b> 7 dancers </p>
+      <p><b>Length of dance:</b> 6:36 </p>
+      <p><b>Proposed production needs:</b> (specialized props, lighting, projection, etc.) Fog/Haze </p>
+      <p><b>Proposed costume ideas:</b> (include sample photo(s) as able) I want one of my dancers to be 
+        dressed in a 1960s style collared dress. I want the rest of the cast in a similar silhouette but for their dresses to be off-white/gray and for the skirt and 
+        possibly the sleeves to be tattered/worn looking to appear like ghostly representations of the 
+        lead. </p>
+      <p><b>Share a general description of your main themes or concept and movement ideas you will 
+        explore around that theme. Feel free to list any choreographic structures or devices you plan 
+        to incorporate rooted in your theme/concept:</b> 
+        My piece “At a Crossroads” explores transitional stages in life where you must decide 
+        what path to take next. It is inspired by the novel The Bell Jar by Sylvia Plath, specifically the 
+        scene where the main character compares her life and its future possibilities to the branches 
+        and fruit on a fig tree, and imagines starving to death in the crotch of the tree while the figs fall 
+        and rot at her feet due to her inability to choose just one. I want to explore the paralyzing 
+        indecision and anxiety that can surround planning your future path, dealing with conflicting 
+        aspirations, and the fear of making the wrong choice. I want to communicate to the audience 
+        that we all have moments in life where we are unsure of the direction we are headed and are 
+        paralyzed by indecision, but it is important to take a leap onto a path even if it is scary and see 
+        where it leads you, rather than letting the fear of the unknown consume you. The work follows 
+        an individual in a dreamlike state who is surrounded by manifestations of her potential futures, 
+        and she is pulled in different directions as she tries to decide on a path. Each of the other 
+        dancers represents a different future path for the individual. The first section of the work will 
+        be set to Gardermoen by Julia Kent and the movement will be curious and investigative as the 
+        individual explores the different pathways that she might take. The second section of the work 
+        will be set to Tempelhof by Julia Kent, and the movement will become increasingly frantic and 
+        urgent as the individual becomes overwhelmed by all of the possibilities, and fears that 
+        choosing one path will lead to losing all of the others. Some movement ideas that I would like 
+        to explore are contact and partnering, pulling, opposing forces, and following impulses. I would 
+        also like to explore creating structures and images with my dancers such as the bell jar, the fig 
+        tree, and winding pathways. </p>
+      <p><b>Feel free to share other images, inspiration, text, mood boards, etc. that are feeding your 
+        work.</b></p>
+        <div class="row">
+          <div class="column">
+            <img src="Picture10.jpg" alt="Snow" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Picture5.jpg" alt="Forest" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Picture7.jpg" alt="Mountains" style="width:100%">
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="Picture8.jpg" alt="Snow" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Picture9.jpg" alt="Forest" style="width:100%">
+          </div>
+          <div class="column">
+            <img src="Picture6.png" alt="Mountains" style="width:100%">
+          </div>
+        </div>
+    </div>
+    <div id="Tab4" class="tab-content">
+      <h2>Costume Treatment</h2>
+      <p><b>Choreographer(s):</b> Gwynevere Deterding</p>
+      <p><b>Cast Size:</b> 7 dancers</p>
+      <p><b>Music/Sound:</b> Gardermoen and Tempelhof by Julia Kent</p>
+      <p><b>Dance Style:</b> Contemporary</p>
+      <p><b>Name of Piece:</b> At A Crossroads</p>
+      <br>
+      <p><b>Inspiration:</b></p>
+      <p><b>What inspired the creation of your piece?</b></p>
+      <p>The creation of my piece was inspired by the novel The Bell Jar by Sylvia Plath, specifically the fig tree metaphor where the narrator relates her life and its future paths and possibilities to the fruit hanging from the branches of a fig tree and imagines the fruit falling and rotting at her feet due to her inability to choose only one.</p>
+      <p><b>How has that original inspiration evolved through your process?</b></p>
+      <p>While the original inspiration still stands, it has evolved to become additionally inspired by my own experiences of transitional periods in my life where I’ve had conflicting aspirations and felt paralyzed by tough decisions. I have one dancer who represents the person stuck at a crossroads, and the other dancers reflect potential future paths that that person could choose. </p>
+      <br>
+      <p><b>Purpose of your work:</b></p>
+      <p><b>What is the point or purpose of the work itself?</b></p>
+      <p>The purpose of the work is to depict the experience of being stuck at a crossroads in life, and feeling pulled in different directions. Sometimes we feel like we have to give up on one dream we’ve had in order to pursue another, and sometimes we are so paralyzed by tough decisions that it is hard to keep moving forward. </p>
+      <p><b>What mood and/or emotions are you aiming to invoke with the performance of your finished work?</b></p>
+      <p>I want to invoke a dark and haunting mood, and I want the audience to feel a little bit of the anxiety and fear that comes with making tough decisions.</p>
+      <p><b>What message are you trying to communicate to the viewer/audience? What are you hoping they take away from experiencing your work? </b></p>
+      <p>I want to communicate to the audience that we all have moments in life where we are unsure of the direction we are headed and are paralyzed by indecision, but it is important to take a leap onto a path even if it is scary and see where it leads you, rather than letting the fear of the unknown consume you.</p>
+      <p><b>Describe your piece in 3-5 adjectives:</b></p>
+      <p>Tense, Haunting, Urgent, Frantic</p>
+      <br>
+      <p><b>Costume Research:</b></p>
+      <p>I want my lead dancer to be dressed in a 1960s style collared dress similar to the one pictured below. I want the rest of the cast in other individual 1960s silhouettes but for their dresses to be gray and for the skirt and the sleeves to be tattered/worn looking to appear like ghostly representations of the lead. I want everyone to have their own silhouette to help show that they are each representing a different pathway.</p>
+      <img src="Picture2.jpg" alt="Dress" style="width:25%">
+      <p>Kylie's Silhouette (Lead)</p>
+      <div class="row">
+        <div class="column">
+          <img src="dress1.jpg" alt="Snow">
+        </div>
+        <div class="column">
+          <img src="dress2.jpg" alt="Forest">
+        </div>
+        <div class="column">
+          <img src="dress3.jpg" alt="Mountains">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>MO's Silhouette</p>
+        </div>
+        <div class="column">
+          <p>Liz's Silhouette</p>
+        </div>
+        <div class="column">
+          <p>Anna's Silhouette</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <img src="dress4.jpg" alt="Snow">
+        </div>
+        <div class="column">
+          <img src="dress5.jpg" alt="Forest">
+        </div>
+        <div class="column">
+          <img src="dress6.jpg" alt="Mountains" style="width:50%">
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <p>Hillary's Silhouette</p>
+        </div>
+        <div class="column">
+          <p>Lauren's Silhouette</p>
+        </div>
+        <div class="column">
+          <p>Maia's Silhouette</p>
+        </div>
+      </div>
+      <img src="leadcolor.jpg" alt="pink" style="width:25%">
+      <p>Lead Color Palette: I chose pastel pink for the lead’s dress because I want her to represent femininity and the innocence of a young adult chasing after their dreams</p>
+      <img src="corpscolor.jpg" alt="gray" style="width:25%">
+      <p>Corps Color Palette: I chose gray for the corps in order to create a look of ghostliness and decay</p>
+      <img src="Picture4.jpg" alt="gray" style="width:25%">
+      <p>This is my inspiration for what the corps dresses will look like when gray and tattered, except the skirts will be shorter.</p>
+      <br>
+      <p><b>Sourcing/Alteration: </b>Since the dresses are vintage, I would like to try to thrift them. The corps dresses will need to be distressed using a variety of techniques discussed with Tiffany. </p>
+    
+    </div>
+    <div id="Tab5" class="tab-content">
+      <h2>Audition Preparation, Process, and Results</h2>
+      <p style="text-indent: 40px"> In order to prepare for the audition, I had to decide what I was looking for in my cast. I knew that I wanted to do a contemporary style work, and I wanted dancers who could perform with a fluid movement quality and had solid ballet and modern technique. Reflecting back, I wish I would have requested that we do a combination that was more contemporary/modern based because it was difficult to find the quality that I was looking for with just ballet and jazz combinations. I also knew that I wanted to incorporate partnering in my work, so I looked for dancers who appeared comfortable with weight sharing and weren’t timid about it. The improv section was where I ended up making most of my decisions. I realized the importance of music selection during this audition, because the person in charge of the improv chose an upbeat jazz song for the weight sharing section which didn’t support the style of movement that I was looking for, so that is something I should have brought up during planning. 
+        During the audition process, I made sure to come up with a long list of casting possibilities, because I knew there would be negotiations during casting. I also considered how the dancers would complement each other, and not just their individual abilities. I was not a fan of the way the casting process was ran, as I do not think it was fair that the returners and upperclassmen were able to cast their entire dance before the underclassmen could even cast a single dancer. However, I am happy with my resulting cast and they have been doing a wonderful job with bringing my work to life.
+        .</p>
+      <img src="audition.jpeg" alt="audition" class="center"> 
+    </div>
+    <div id="Tab6" class="tab-content">
+      <h2>Rehearsal Documentation</h2>
+      <p>https://alabama.box.com/s/prl4nz9xkcrg7p8tl9i7exfa0k5jvkly</p>
+      <p>This link contains my rehearsal videos from the semester.</p>
+    </div>
+    <div id="Tab7" class="tab-content">
+      <h2>Overall Reflection on Feedback Received from Peers, Instructors, and Faculty Mentors</h2>
+      <p style="text-indent: 40px">My faculty mentor and my peers during the movement study 2 presentation recommended that I further develop each of the individual characters in my work. I have started doing this by assigning each dancer a future path to represent and giving them phrase work containing abstracted gestures that would be performed by that individual. Fen also recommended that I have individual conversations with each dancer about their character and motivations to help them be able to embody the character I want them to portray, so that is something I want to do in the spring semester. In my feedback from the instructors, they mentioned that some of the relationships between dancers weren’t clear in terms of the narrative I was trying to portray, so that is another thing that I will be working on tweaking. Fen also mentioned considering what the group represents when they are together as a collective and creating structures versus when they are their own individuals. They talked about how the group being together could represent the idea of “choice” as a whole. I was also told to keep returning to the tree and path structures that are present in the beginning of the work, so I have begun including more of those in the work and experimenting with my dancers on the creation of new structures. As I continue to develop this work in the spring, I want to explore partnering some more and make the choices that the lead dancer is making come across clearer. </p>
+    </div>
+  </div>
+
+  <script>
+    function openTab(evt, tabName) {
+      var tabContent = document.getElementsByClassName("tab-content");
+      var tabLinks = document.getElementsByClassName("tab-link");
+      for (var i = 0; i < tabContent.length; i++) {
+        tabContent[i].classList.remove("active");
+      }
+      for (var i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    function openSubTab(evt, subTabName) {
+      var subTabContent = evt.currentTarget.closest('.tab-content').getElementsByClassName("sub-tab-content");
+      var subTabLinks = evt.currentTarget.parentElement.getElementsByClassName("sub-tab-link");
+      for (var i = 0; i < subTabContent.length; i++) {
+        subTabContent[i].classList.remove("active");
+      }
+      for (var i = 0; i < subTabLinks.length; i++) {
+        subTabLinks[i].classList.remove("active");
+      }
+      document.getElementById(subTabName).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+
+    // Set the default active tab
+    document.getElementById("defaultTab").click();
+  </script>
+  
+</body>
+</html>
+
