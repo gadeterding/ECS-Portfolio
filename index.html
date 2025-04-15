@@ -124,42 +124,46 @@
   </nav>
 
   <!-- Main Content Section -->
-  <div class="content">
-  <div id="Homepage" class="tab-content active">
-    <div style="position: relative; margin: 0; padding: 0;">
+  <div class="content" style="padding: 0;">
+  <div id="Homepage" class="tab-content active" style="padding: 0; margin: 0;">
+    <div style="position: relative; width: 100%; overflow: hidden;">
+
       <!-- Title Overlay -->
       <h2 style="
         position: absolute;
         top: 20px;
         left: 50%;
         transform: translateX(-50%);
-        color: white;
-        font-size: 3em;
+        color: #f1f1f1;
+        font-size: 2.8em;
         font-family: 'Georgia', serif;
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.25);
+        padding: 8px 16px;
+        border-radius: 8px;
         z-index: 2;
         text-align: center;
+        backdrop-filter: blur(3px);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       ">
         At a Crossroads
       </h2>
 
       <!-- Image Row -->
-      <div class="row" style="margin: 0;">
-        <div class="column" style="padding: 0;">
-          <img src="ECSimage1.jpg" alt="dancers" style="width:100%; display: block;">
+      <div class="row" style="display: flex; margin: 0; padding: 0;">
+        <div class="column" style="flex: 1; padding: 0;">
+          <img src="ECSimage1.jpg" alt="dancers" style="width: 100%; height: auto; display: block;">
         </div>
-        <div class="column" style="padding: 0;">
-          <img src="ECSimage2.jpg" alt="dancers" style="width:100%; display: block;">
+        <div class="column" style="flex: 1; padding: 0;">
+          <img src="ECSimage2.jpg" alt="dancers" style="width: 100%; height: auto; display: block;">
         </div>
-        <div class="column" style="padding: 0;">
-          <img src="ECSimage3.jpg" alt="dancers" style="width:100%; display: block;">
+        <div class="column" style="flex: 1; padding: 0;">
+          <img src="ECSimage3.jpg" alt="dancers" style="width: 100%; height: auto; display: block;">
         </div>
       </div>
     </div>
   </div>
 </div>
+
 
   
 
